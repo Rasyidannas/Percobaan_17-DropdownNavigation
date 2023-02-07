@@ -1,0 +1,41 @@
+//COLOR VARIABLES
+$almost-white: hsl(0, 0%, 98%);
+$medium-gray: hsl(0, 0%, 41%);
+$almost-black: hsl(0, 0%, 8%);
+
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 112.5%;//1rem = 18px
+    
+    @media only screen and (max-width: 1200px) { 
+        font-size: 87.5%;//1rem = 14px
+    }
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    padding: 2.5rem;
+    background-color: $almost-white;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $medium-gray;
+}
+
+img{
+    width: 100%;
+}

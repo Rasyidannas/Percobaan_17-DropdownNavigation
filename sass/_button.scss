@@ -1,0 +1,75 @@
+.nav-link{
+    &,
+    &:link,
+    &:visited{
+        padding: .5rem;
+        color: $medium-gray;
+        cursor: pointer;
+        transition: color .2s ease-in-out;
+    
+        display: inline-flex;
+        align-items: center;
+        gap: 0 .5rem;
+        
+        & .icon-arrow{
+            transform: rotate(0deg);
+        }
+    }
+
+    &:hover{
+        color: $almost-black;
+        
+        ~ *{
+            visibility: visible;
+        }
+
+        & .icon-arrow{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.btn{
+    &,
+    &:link,
+    &:visited{
+        text-align: center;
+        padding: 1rem 1.5rem;
+        border-radius: .5rem;
+        display: inline-block;
+        cursor: pointer;
+        transition: all .2s;
+    }
+    
+    &__primary{
+        color: $almost-white;
+        background-color: $almost-black;
+        border: 2px solid $almost-black;
+
+        &:hover{
+            color: $almost-black;
+            border: 2px solid $almost-black;
+            background-color: $almost-white;
+        }
+    }
+    
+    &__secondary{
+        border: 2px solid $medium-gray;
+        
+        &:hover{
+            color: $almost-black;
+            border: 2px solid $almost-black;
+        }
+    }
+
+    &__trenary{
+        &:hover{
+            color: $almost-black;
+        }
+    }
+}
+
+//Button Close
+#btn-close{
+    text-align: right;
+}

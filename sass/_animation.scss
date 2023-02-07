@@ -1,0 +1,63 @@
+@keyframes show-left{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes leave-right{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes rotate-180{
+    0%{
+        transform: rotate(0);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.animation-show-left{
+    opacity: 0;
+
+    animation-name: show-left;
+    animation-delay: .3s;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animation-leave-right{
+    opacity: 1;
+
+    animation-name: leave-right;
+    animation-delay: .3s;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animation-rotate-180{
+    opacity: 1;
+
+    animation-name: rotate-180;
+    animation-delay: .2s;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
